@@ -43,3 +43,5 @@ If your team needs this MCP fully-loaded faster, ping hello@meok.ai for sponsore
 ## License
 
 MIT © MEOK AI Labs
+
+<!-- mcp-name: io.github.CSOAI-ORG/sbom-cyclonedx-mcp -->
