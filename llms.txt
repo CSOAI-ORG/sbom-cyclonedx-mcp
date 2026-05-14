@@ -1,0 +1,36 @@
+# sbom-cyclonedx-mcp
+# Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Required by EO 14028 + NIS2 + CRA.
+
+## Install
+```bash
+pip install sbom-cyclonedx-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label + on-premise.
+
+## Tools (5)
+
+### `generate_sbom_cyclonedx(query, api_key)`
+Generate CycloneDX 1.6 SBOM from package manifests
+
+### `generate_sbom_spdx(query, api_key)`
+Generate SPDX 2.3 SBOM
+
+### `validate_sbom(query, api_key)`
+Validate SBOM against CycloneDX/SPDX schema + completeness
+
+### `vex_attach(query, api_key)`
+Attach VEX (Vulnerability Exploitability eXchange) statements
+
+### `regulation_map(query, api_key)`
+Map SBOM to EO 14028 / NIS2 / CRA / FDA requirements
+
+## Pairs with
+- `meok-attestation-api` — HMAC signing for compliance certs
+- `meok-attestation-verify` — public verification
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT

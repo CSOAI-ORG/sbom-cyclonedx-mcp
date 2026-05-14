@@ -1,0 +1,13 @@
+# SBOM CycloneDX + SPDX Generator/Validator MCP - Auto-trigger Rules
+
+When the user asks about SBOM, CycloneDX, SPDX, supply chain, EO 14028, VEX, use sbom-cyclonedx-mcp tools:
+
+- **generate_sbom_cyclonedx**: Generate CycloneDX 1.6 SBOM from package manifests
+- **generate_sbom_spdx**: Generate SPDX 2.3 SBOM
+- **validate_sbom**: Validate SBOM against CycloneDX/SPDX schema + completeness
+- **vex_attach**: Attach VEX (Vulnerability Exploitability eXchange) statements
+- **regulation_map**: Map SBOM to EO 14028 / NIS2 / CRA / FDA requirements
+
+Install: `pip install sbom-cyclonedx-mcp`
+
+By MEOK AI Labs — industry governance MCP. Pairs with meok-attestation-api for signed compliance certs.
