@@ -4,7 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sbom-cyclonedx-mcp"
-version = "1.0.0"
+readme = "README.md"
+version = "1.0.3"
 description = "Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Required by EO 14028 + NIS2 + CRA."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -20,7 +21,7 @@ dependencies = ["mcp>=1.0.0"]
 
 [project.urls]
 Homepage = "https://meok.ai"
-Repository = "https://github.com/meok-ai-labs/sbom-cyclonedx-mcp"
+Repository = "https://github.com/CSOAI-ORG/sbom-cyclonedx-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]

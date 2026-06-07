@@ -1,0 +1,28 @@
+{
+  "name": "sbom-cyclonedx-mcp",
+  "title": "Sbom Cyclonedx Mcp",
+  "description": "Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Required by EO 14028 + NIS2 + CRA.",
+  "version": "1.0.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "generate_sbom_cyclonedx"
+    },
+    {
+      "name": "generate_sbom_spdx"
+    },
+    {
+      "name": "validate_sbom"
+    },
+    {
+      "name": "vex_attach"
+    },
+    {
+      "name": "regulation_map"
+    }
+  ]
+}

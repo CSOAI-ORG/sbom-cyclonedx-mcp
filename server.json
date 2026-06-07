@@ -1,18 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/sbom-cyclonedx-mcp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Requir...",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/sbom-cyclonedx-mcp",
-    "source": "https://github.com/CSOAI-ORG/sbom-cyclonedx-mcp"
+    "source": "github"
   },
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "sbom-cyclonedx-mcp",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"

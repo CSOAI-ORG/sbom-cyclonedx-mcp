@@ -1,0 +1,28 @@
+name: sbom-cyclonedx-mcp
+description: 'MCP server: sbom-cyclonedx-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/sbom-cyclonedx-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: generate_sbom_cyclonedx
+  description: Generate CycloneDX 1.6 SBOM from package manifests
+- name: generate_sbom_spdx
+  description: Generate SPDX 2.3 SBOM
+- name: validate_sbom
+  description: Validate SBOM against CycloneDX/SPDX schema + completeness
+- name: vex_attach
+  description: Attach VEX (Vulnerability Exploitability eXchange) statements
+- name: regulation_map
+  description: Map SBOM to EO 14028 / NIS2 / CRA / FDA requirements
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'
