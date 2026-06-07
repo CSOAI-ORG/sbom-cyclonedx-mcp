@@ -1,0 +1,68 @@
+{
+  "name": "sbom-cyclonedx-mcp",
+  "description": "Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Requir...",
+  "url": "https://proofof.ai/scorecard/sbom-cyclonedx-mcp.html",
+  "version": "1.0.3",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "generate_sbom_cyclonedx",
+      "name": "Generate Sbom Cyclonedx",
+      "description": "generate_sbom_cyclonedx via sbom-cyclonedx-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_sbom_spdx",
+      "name": "Generate Sbom Spdx",
+      "description": "generate_sbom_spdx via sbom-cyclonedx-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "validate_sbom",
+      "name": "Validate Sbom",
+      "description": "validate_sbom via sbom-cyclonedx-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "vex_attach",
+      "name": "Vex Attach",
+      "description": "vex_attach via sbom-cyclonedx-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "regulation_map",
+      "name": "Regulation Map",
+      "description": "regulation_map via sbom-cyclonedx-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

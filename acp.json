@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "sbom-cyclonedx-mcp",
+    "description": "Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Requir...",
+    "version": "1.0.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "sbom-cyclonedx-mcp"
+      }
+    ],
+    "capabilities": [
+      "generate_sbom_cyclonedx",
+      "generate_sbom_spdx",
+      "validate_sbom",
+      "vex_attach",
+      "regulation_map"
+    ]
+  }
+}
