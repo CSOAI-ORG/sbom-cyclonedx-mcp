@@ -1,28 +1,37 @@
-name: sbom-cyclonedx-mcp
-description: 'MCP server: sbom-cyclonedx-mcp'
-version: 1.0.5
-author: MEOK AI Labs
-homepage: https://safetyof.ai
-repository: https://github.com/MEOK-AI-Labs/sbom-cyclonedx-mcp
-license: MIT
-categories:
-- compliance
-- governance
-tools:
-- name: generate_sbom_cyclonedx
-  description: Generate CycloneDX 1.6 SBOM from package manifests
-- name: generate_sbom_spdx
-  description: Generate SPDX 2.3 SBOM
-- name: validate_sbom
-  description: Validate SBOM against CycloneDX/SPDX schema + completeness
-- name: vex_attach
-  description: Attach VEX (Vulnerability Exploitability eXchange) statements
-- name: regulation_map
-  description: Map SBOM to EO 14028 / NIS2 / CRA / FDA requirements
-build:
-  type: python
-  entrypoint: server.py
-  dependencies:
-  - mcp>=1.0.0
-runtime:
-  python: '>=3.10'
+# smithery.yaml — Smithery (https://smithery.ai) submission payload
+# Repo: CSOAI-ORG/sbom-cyclonedx-mcp
+# Generated: 2026-06-09
+# Transport: stdio (PyPI package, installed via uvx)
+# See: DISTRIBUTION_GAPS_2026-06-08.md for the channel strategy
+startCommand:
+  type: stdio
+  timeout: 120000
+  pingInterval: 5000
+  pingTimeout: 30000
+  configSchema:
+    type: object
+    required: []
+    properties:
+      apiKey:
+        type: string
+        description: "MEOK API key (optional; required for x402 paywalled tools)"
+        default: ""
+      x402PayTo:
+        type: string
+        description: "USDC address for x402 micropayments (default: meok.ai wallet)"
+        default: ""
+      logLevel:
+        type: string
+        description: "Log level (debug, info, warn, error)"
+        default: "info"
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({
+      command: 'uvx',
+      args: ['sbom_cyclonedx'],
+      env: {
+        MEOK_API_KEY: config.apiKey || '',
+        X402_PAY_TO: config.x402PayTo || '',
+        MEOK_LOG_LEVEL: config.logLevel || 'info',
+      }
+    })
