@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "sbom-cyclonedx-mcp"
 readme = "README.md"
-version = "1.0.3"
+version = "1.0.4"
 description = "Software Bill of Materials generation + validation in CycloneDX 1.6 and SPDX 2.3 formats. Required by EO 14028 + NIS2 + CRA."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
