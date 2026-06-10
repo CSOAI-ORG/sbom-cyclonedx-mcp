@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "sbom-cyclonedx-mcp": {
+      "command": "uvx",
+      "args": [
+        "sbom-cyclonedx-mcp"
+      ]
+    }
+  }
+}
